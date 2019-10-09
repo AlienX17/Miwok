@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
         //Find the View that shows the numbers category
         TextView numbers = findViewById(R.id.numbers);
 
+        // todo: For consistency, you should set the OnClickListener in the same way as you did for
+        //  family, color and phrases.
         //Set a clicklistener to that view
         numbers.setOnClickListener(new View.OnClickListener(){
 

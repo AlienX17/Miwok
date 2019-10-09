@@ -35,6 +35,9 @@ class Word {
         return mMiwokTranslation;
     }
 
+    // todo: For code readability and consistency you should use the naming for all your getters.
+    //  In this case your getter name should drop the 'm'. getImageResourceId is consistent with the
+    //  other getters naming.
     int getmImageResourceId(){
         return mImageResourceId;
     }
