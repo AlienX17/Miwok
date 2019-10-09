@@ -26,6 +26,8 @@ public class WordAdapter extends ArrayAdapter<Word> {
         mColorResourceId = colorResourceId;
     }
 
+
+    @SuppressWarnings("NullableProblems")
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View listItemView = convertView;
@@ -54,13 +56,12 @@ public class WordAdapter extends ArrayAdapter<Word> {
         ImageView miwokImageView = listItemView.findViewById(R.id.miwok_image_view);
         // Get the image resource ID from the current AndroidFlavor object and
         // set the image to iconView
-        miwokImageView.setImageResource(currentWord.getmImageResourceId());
+        miwokImageView.setImageResource(currentWord.getImageResourceId());
 
         if(currentWord.hasImage()){
-            miwokImageView.setImageResource(currentWord.getmImageResourceId());
+            miwokImageView.setImageResource(currentWord.getImageResourceId());
             miwokImageView.setVisibility(View.VISIBLE);
-        }
-        else{
+        } else{
             miwokImageView.setVisibility(View.GONE);
         }
 
